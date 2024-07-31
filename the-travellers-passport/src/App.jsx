@@ -29,19 +29,19 @@ function App() {
 
   const keywordUpdate = (e) => {
     setKeyword(e.target.value)
-    if (e.target.value === 'waters') {
+    if (e.target.value.toLowerCase() === 'waters') {
       setCP1(true)
     }
 
-    if (e.target.value === 'siloso' && cp1) {
+    if (e.target.value.toLowerCase() === 'siloso' && cp1) {
       setCP2(true)
     }
 
-    if (e.target.value === 'soldiers' && cp2) {
+    if (e.target.value.toLowerCase() === 'soldiers' && cp2) {
       setCP3(true)
     }
 
-    if (e.target.value === 'medical' && cp3) {
+    if (e.target.value.toLowerCase() === 'medical' && cp3) {
       setCP4(true)
     }
 
